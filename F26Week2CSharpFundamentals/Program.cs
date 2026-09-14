@@ -68,6 +68,9 @@
 
             Console.WriteLine("\n\n");
 
+            Circle c3 = null;
+            c3?.radius = 30;
+
 
             // string example
             string s1 = "hello";
@@ -80,6 +83,33 @@
 
             Console.WriteLine(s1);
             Console.WriteLine(s2);
+
+            Console.WriteLine("\n\n");
+
+
+
+            string str = "10";
+
+            i = Convert.ToInt32(str);
+            //i = int.Parse(str);
+
+            Console.WriteLine(i);
+            Console.WriteLine("\n\n");
+
+
+
+            double price = 2343.2371;
+            Console.WriteLine(price.ToString("C"));
+
+            double discount = 0.25;
+            Console.WriteLine(discount.ToString("P0"));
+
+            double r = 5;
+            double area = Math.PI * r * r;
+            Console.WriteLine("\nArea = " + area.ToString("F3"));
+
+
+            int? k = null;
         }
     }
 
